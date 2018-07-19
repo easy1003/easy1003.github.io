@@ -79,14 +79,17 @@
 
 
 
+<meta name="description" content="###Session Cookie  HTTP协议本身是无状态的,cookie机制采用的是在客户端保持状态的方案，而session机制采用的是在服务器端保持状态的方案。cookie和session都是用来跟踪浏览器用户身份的会话方式。 cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗,如果主要考虑到安全应当使用session session会在一定时间内保存在服务">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hello">
-<meta property="og:url" content="http://yoursite.com/2018/07/14/hello/index.html">
+<meta property="og:title" content="研发基础知识复习">
+<meta property="og:url" content="http://yoursite.com/2018/07/19/研发基础知识复习/index.html">
 <meta property="og:site_name" content="yeasyBlog">
+<meta property="og:description" content="###Session Cookie  HTTP协议本身是无状态的,cookie机制采用的是在客户端保持状态的方案，而session机制采用的是在服务器端保持状态的方案。cookie和session都是用来跟踪浏览器用户身份的会话方式。 cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗,如果主要考虑到安全应当使用session session会在一定时间内保存在服务">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-14T12:26:26.665Z">
+<meta property="og:updated_time" content="2018-07-19T15:19:14.984Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hello">
+<meta name="twitter:title" content="研发基础知识复习">
+<meta name="twitter:description" content="###Session Cookie  HTTP协议本身是无状态的,cookie机制采用的是在客户端保持状态的方案，而session机制采用的是在服务器端保持状态的方案。cookie和session都是用来跟踪浏览器用户身份的会话方式。 cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗,如果主要考虑到安全应当使用session session会在一定时间内保存在服务">
 
 
 
@@ -116,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/14/hello/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/19/研发基础知识复习/"/>
 
 
 
 
 
-  <title>hello | yeasyBlog</title>
+  <title>研发基础知识复习 | yeasyBlog</title>
   
 
 
@@ -229,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/14/hello/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/19/研发基础知识复习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="yeasy">
@@ -246,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hello</h1>
+          <h1 class="post-title" itemprop="name headline">研发基础知识复习</h1>
         
 
         <div class="post-meta">
@@ -258,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-14T20:26:26+08:00">
-                2018-07-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-19T23:04:18+08:00">
+                2018-07-19
               </time>
             
 
@@ -296,7 +299,24 @@
       
 
       
-        
+        <p>###Session Cookie</p>
+<ol>
+<li>HTTP协议本身是无状态的,cookie机制采用的是在客户端保持状态的方案，而session机制采用的是在服务器端保持状态的方案。cookie和session都是用来跟踪浏览器用户身份的会话方式。</li>
+<li>cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗,如果主要考虑到安全应当使用session</li>
+<li>session会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能，如果主要考虑到减轻服务器性能方面，应当使用COOKIE</li>
+<li>将登陆信息等重要信息存放为SESSION;其他信息如果需要保留，可以放在COOKIE中</li>
+</ol>
+<p>###Java中的equals，hashcode</p>
+<p>####equals<br>主要有四个性质：</p>
+<ol>
+<li>自反性（reflexive）。对于任意不为null的引用值x，x.equals(x)一定是true。</li>
+<li>对称性（symmetric）。对于任意不为null的引用值x和y，当且仅当x.equals(y)是true时，y.equals(x)也是true。</li>
+<li>传递性（transitive）。对于任意不为null的引用值x、y和z，如果x.equals(y)是true，同时y.equals(z)是true，那么x.equals(z)一定是true。</li>
+<li>一致性（consistent）。对于任意不为null的引用值x和y，如果用于equals比较的对象信息没有被修改的话，多次调用时x.equals(y)要么一致地返回true要么一致地返回false。</li>
+</ol>
+<p>注意：对于任意不为null的引用值x，x.equals(null)返回false。</p>
+<p>####hashcode<br>把对象映射成一个interger， eqauls==&gt;hashcode相等  反之不成立<br>hashcode是一个对象映射后的一个code，如何映射可以有不同的规则，比如之间取地址作为hashcode</p>
+
       
     </div>
     
@@ -320,8 +340,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/14/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/07/14/hello/" rel="next" title="hello">
+                <i class="fa fa-chevron-left"></i> hello
               </a>
             
           </div>
@@ -329,10 +349,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/19/研发基础知识复习/" rel="prev" title="研发基础知识复习">
-                研发基础知识复习 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
